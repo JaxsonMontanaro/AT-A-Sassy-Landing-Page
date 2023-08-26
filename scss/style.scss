@@ -1,3 +1,6 @@
+@use 'utilities';
+@use 'config';
+@use 'btnConfig';
 
 * {
   box-sizing: border-box;
@@ -6,8 +9,8 @@
 }
 
 body {
-  background-color: $light-color;
-  font-family: $font-stack;
+  background-color: config.$light-color;
+  font-family: config.$font-stack;
   line-height: 1;
 }
 
@@ -20,6 +23,46 @@ a {
 }
 
 .hero {
+@include utilities.set-bg(config.$primary-color);
+height: 600px;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ul{
+  display: flex;
+  list-style-type: none;
+}  
+
+li {
+  padding: 15px;
+}
+
+a {
+  color: utilities.text-color-picker(config.$primary-color);
+}
+
+a.hover {
+  color: config.$secondary-color
+}
+}
+
+&-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+img {
+  height: 500px;
+  width: 500px;
+}
+
+
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?

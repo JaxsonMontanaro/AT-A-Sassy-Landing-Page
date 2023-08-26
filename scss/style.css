@@ -11,7 +11,6 @@
   padding: 8px 20px;
   margin: 3px;
 }
-
 .btn-secondary:hover, .btn-primary:hover {
   transform: scale(0.8);
 }
@@ -51,30 +50,24 @@ a {
   color: white;
   height: 600px;
 }
-
 .hero nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .hero nav ul {
   display: flex;
   list-style-type: none;
 }
-
 .hero nav li {
   padding: 15px;
 }
-
 .hero nav a {
   color: white;
 }
-
 .hero nav a.hover {
   color: #a2d0fc;
 }
-
 .hero-content {
   height: 100%;
   display: flex;
@@ -82,7 +75,6 @@ a {
   justify-content: center;
   margin-top: 30px;
 }
-
 .hero img {
   height: 500px;
   width: 500px;
@@ -166,6 +158,4 @@ a {
 
 .py-5 {
   padding: 5rem 0;
-} 
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
